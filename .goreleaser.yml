@@ -122,3 +122,9 @@ dockers:
       - ksops.go
       # include .git for version
       - .git/
+
+docker_manifests:
+- name_template: cguertz/ksops:{{ .Version }}
+  image_templates:
+  - cguertz/ksops:{{ .Version }}
+  - cguertz/ksops:{{ .Version }}-arm64
