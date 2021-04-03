@@ -46,18 +46,15 @@ changelog:
 
 release:
   github:
-    owner: viaduct-ai
+    owner: cguertin14
     name: kustomize-sops
 
 dockers:
   # Templates of the Docker image names.
   - image_templates:
-      - "viaductoss/{{ .ProjectName }}:latest"
-      - "viaductoss/{{ .ProjectName }}:{{ .Tag }}"
-      - "viaductoss/{{ .ProjectName }}:v{{ .Major }}"
-      - "quay.io/viaductoss/{{ .ProjectName }}:latest"
-      - "quay.io/viaductoss/{{ .ProjectName }}:{{ .Tag }}"
-      - "quay.io/viaductoss/{{ .ProjectName }}:v{{ .Major }}"
+      - "cguertz/ksops:latest"
+      - "cguertz/ksops:{{ .Tag }}"
+      - "cguertz/ksops:v{{ .Major }}"
 
     # Template of the docker build flags.
     build_flag_templates:
